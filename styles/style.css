@@ -1,3 +1,5 @@
+/* GLOBAL STYLES */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 32%
 }
 
 body {
@@ -13,6 +15,8 @@ body {
   color: #1F2022;
   font-family: 'Barlow', Arial, Helvetica, sans-serif;
 }
+
+/* TYPOGRAPHY */
 
 h1,
 h2,
@@ -25,15 +29,17 @@ h2,
 h3,
 button {
   font-family: 'Emblema One';
+  text-transform: uppercase;
 }
 
 
 h1 {
-  font-size: 10.46rem;
+  font-size: 8rem;
 }
 
 h2 {
   font-size: 4.2rem;
+  padding: 30px 0;
 }
 
 h2 {
@@ -44,7 +50,7 @@ p,
 button,
 a,
 address {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 a {
@@ -52,7 +58,9 @@ a {
   text-decoration: none;
 }
 
-ul {
+/* GLOBAL ELEMENTS*/
+ul,
+li {
   list-style: none;
 }
 
@@ -73,9 +81,11 @@ button:hover {
   transform: scale(1.03);
 }
 
+/* LAYOUT STYLES */
+
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1100;
   width: 100%;
 }
 
@@ -88,15 +98,17 @@ button:hover {
   height: 0;
 } 
 
-/* HERO SECTION */
+/* LANDING SECTION */
 header {
   background: linear-gradient(55deg, #F5C8CF, #FCDDE2 40% 80%, #F5C8CF);
+  max-height: 100vh;
 }
+
 header nav {
   float: right;
 }
 
-/* HIDDEN MENU STYLES THANKS TO @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON */
+/* !! HIDDEN MENU STYLES THANKS TO @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON */
 .menu-icon {
   position: relative;
 }
@@ -105,14 +117,13 @@ header nav {
   background: transparent;
   border: none;
   color: #042259;
-  font-size: 4rem;
+  font-size: 8rem;
 }
 
 .menu-links {
   background: #F0F5FF;
   height: 0;
   overflow: hidden;
-  padding: 0 15px;
   position: absolute;
 }
 
@@ -121,11 +132,18 @@ header nav {
   height: auto
 }
 
-/* HIDDEN MENU STYLES END */
+/* !! HIDDEN MENU STYLES @JUNO COLLEGE END */
+
+.menu-links li a {
+  padding: 2px 0;
+}
+
+.menu-links li a:hover {
+  background: #FCDDE2;
+}
 
 header nav li {
   display: inline-block;
-  margin: 5px;
   text-transform: uppercase;
 }
 
@@ -135,16 +153,18 @@ header p {
 }
 
 .heading {
-  width: 40%;
+  clear: both;
   float: left;
+  padding: 50px 20px;
+  width: 60%;
 }
 
 header .img-wrapper {
   float: right;
-  width: 80%;
+  max-width: 75%;
 }
 
-h2 {
+header h2 {
   clear: both;
 }
 
@@ -153,6 +173,7 @@ header .container {
 }
 
 .social {
+  display: none;
   position: absolute;
   top: 50px;
   right: 0px;
@@ -164,19 +185,25 @@ header .container {
 }
 
 .features .img-wrapper {
-  width: 30%;
+  width: 45%;
   float: left;
-  margin-right: 15px;
+}
+
+.features .img-wrapper:last-child {
+  display: none;
 }
 
 /* ARTICLES */
+article .img-wrapper:first-of-type {
+  width: 100%;
+}
+
 article button {
   background: #042259;
   color: #F0F5FF;
-  margin: 0 auto;
 }
 
-/* LINKS CONACT & FOOTER */
+/* LINKS CONACT && FOOTER */
 .links,
 .stay-updated form, 
 footer {
@@ -245,7 +272,7 @@ footer {
 }
 
 /* FOOTER */
-footer {
+footer .container {
   background: #042259;
   color: #F0F5FF;
   padding: 20px 0;
