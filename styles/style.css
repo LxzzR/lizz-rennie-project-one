@@ -96,6 +96,33 @@ header nav {
   float: right;
 }
 
+/* HIDDEN MENU STYLES THANKS TO @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON */
+.menu-icon {
+  position: relative;
+}
+
+.menu-icon button {
+  background: transparent;
+  border: none;
+  color: #042259;
+  font-size: 4rem;
+}
+
+.menu-links {
+  background: #F0F5FF;
+  height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  position: absolute;
+}
+
+.menu-icon li:hover .menu-links,
+.menu-icon li:focus-within .menu-links {
+  height: auto
+}
+
+/* HIDDEN MENU STYLES END */
+
 header nav li {
   display: inline-block;
   margin: 5px;
