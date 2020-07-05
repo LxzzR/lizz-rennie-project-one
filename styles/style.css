@@ -217,17 +217,9 @@ header .container {
 /*  === FEATURES SECTION + FEATURED ARTICLE ===  */
 
 .features .img-wrapper {
-  width: 48%;
+  width: calc(50% - 10px);
   float: left;
-  margin-bottom: 40px;
-}
-
-.features .img-wrapper:first-child {
-  float: left;
-}
-
-.features .img-wrapper:nth-child(2) {
-  float: right;
+  margin: 20px 5px 40px;
 }
 
 .features .img-wrapper:last-child {
@@ -471,8 +463,9 @@ footer p {
   /* Features */
 
   .features .img-wrapper {
-    max-width: 33.33333%;
+    width: calc(33% - 10px);
     margin-bottom: 100px;
+    float: left;
   }
 
   .features .img-wrapper:last-child {
