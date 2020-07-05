@@ -48,8 +48,7 @@ h2 {
 
 p,
 button,
-a,
-address {
+a {
   font-size: 2.8rem;
 }
 
@@ -134,7 +133,8 @@ header nav {
   background: transparent;
   border: none;
   color: #042259;
-  font-size: 8rem;
+  font-size: 4rem;
+  color: #042259;
 }
 
 .menu-links {
@@ -150,7 +150,8 @@ header nav {
 
 .mobile-menu li:hover .menu-links,
 .mobile-menu li:focus-within .menu-links {
-  height: auto
+  height: auto;
+  z-index: 2;
 }
 
 /* --- HIDDEN MENU STYLES @JUNO ENDS --- */
@@ -159,7 +160,7 @@ header nav {
   background: #FCDDE2;
 }
 
-header nav li {
+.desktop-nav li {
   padding-right: 30px;
   text-transform: uppercase;
 }
@@ -272,7 +273,6 @@ footer {
 .stay-updated nav a {
   color: #1D81CC;
   font-family: 'Emblema One';
-  font-size: 3.5rem;
   text-transform: uppercase;
   transition: color 200ms;
 }
@@ -323,11 +323,16 @@ form button {
 }
 
 .contact address {
+  font-size: 2rem;
   font-style: normal;
 }
 
 .stay-updated nav {
   float: right;
+}
+
+.stay-updated nav a {
+  font-size: 2.5rem;
 }
 
 /*  === FOOTER  === */
