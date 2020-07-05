@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #FCDDE2;
+  color: #1F2022;
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #1D81CC;
+} 
+
+h1,
+h2,
+h3,
+button {
+  font-family: 'Emblema One';
+}
+
+
+h1 {
+  font-size: 10.46rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+p,
+button,
+a,
+address {
+  font-size: 2rem;
+}
+
+a {
+  color: #1F2022;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  transition: transform 200ms;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+} 
+
+/* HERO SECTION */
+header {
+  background: linear-gradient(55deg, #F5C8CF, #FCDDE2 40% 80%, #F5C8CF);
+}
+header nav {
+  float: right;
+}
+
+header nav li {
+  display: inline-block;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+header a,
+header p {
+  color: #042259;
+}
+
+.heading {
+  width: 40%;
+  float: left;
+}
+
+header .img-wrapper {
+  float: right;
+  width: 80%;
+}
+
+h2 {
+  clear: both;
+}
+
+header .container {
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+}
+
+/* FEATURES SECTION */
+.features h2 {
+  text-align: center;
+}
+
+.features .img-wrapper {
+  width: 30%;
+  float: left;
+  margin-right: 15px;
+}
+
+/* ARTICLES */
+article button {
+  background: #042259;
+  color: #F0F5FF;
+  margin: 0 auto;
+}
+
+/* LINKS CONACT & FOOTER */
+.links,
+.stay-updated form, 
+footer {
+  text-align: center;
+}
+
+/* LINKS SECTION*/
+.links .container {
+  background: #F5C8CF;
+  color: #042259;
+  text-align: center;
+  }
+
+.links i {
+  font-size: 5rem;
+}
+
+.links a {
+  color: #1D81CC;
+  font-family: 'Emblema One';
+  font-size: 3.12rem;
+}
+
+/* CONTACT SECTION */
+.stay-updated .container {
+  background: #F0F5FF;
+}
+
+.stay-updated h3 {
+  font-size: 2.5rem;
+}
+
+.stay-updated input {
+  border: 1px solid #F5C8CF;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.stay-updated input,
+.stay-updated input::placeholder {
+  color: #1F2022;
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.stay-updated button {
+  background: #F5C8CF;
+  color: #042259;
+}
+
+.contact {
+  float: left;
+}
+
+.contact address {
+  font-style: normal;
+}
+
+.stay-updated nav {
+  float: right;
+}
+.stay-updated nav a {
+  color: #1D81CC;
+  font-family: 'Emblema One';
+  font-size: 2.5rem;
+}
+
+/* FOOTER */
+footer {
+  background: #042259;
+  color: #F0F5FF;
+  padding: 20px 0;
+}
+
+/* CSS TESTING */
+fieldset {
+  border: none;
+}
