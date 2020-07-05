@@ -77,7 +77,7 @@ img {
 button {
   border: none;
   display: block;
-  margin: 10px auto;
+  margin: auto;
   padding: 10px 20px;
   transition: transform 200ms;
 }
@@ -111,7 +111,6 @@ button:hover {
 /* === LANDING SECTION === */
 header {
   background: linear-gradient(55deg, #F5C8CF, #FCDDE2 40% 80%, #F5C8CF);
-  max-height: 100vh;
 }
 
 header nav {
@@ -119,11 +118,11 @@ header nav {
 }
 
 /* === HIDDEN MENU STYLES FROM @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON === */
-.menu-icon {
+.mobile-menu {
   position: relative;
 }
 
-.menu-icon button {
+.mobile-menu button {
   background: transparent;
   border: none;
   color: #042259;
@@ -141,8 +140,8 @@ header nav {
   padding: 8px 0;
 }
 
-.menu-icon li:hover .menu-links,
-.menu-icon li:focus-within .menu-links {
+.mobile-menu li:hover .menu-links,
+.mobile-menu li:focus-within .menu-links {
   height: auto
 }
 
@@ -153,8 +152,11 @@ header nav {
 }
 
 header nav li {
-  display: inline-block;
   text-transform: uppercase;
+}
+
+.desktop-nav {
+  display: none;
 }
 
 header a,
@@ -165,7 +167,7 @@ header p {
 .heading {
   clear: both;
   float: left;
-  padding: 50px 20px;
+  padding: 50px 20px 75px 20px;
   width: 60%;
 }
 
@@ -268,7 +270,9 @@ form {
 fieldset {
   border: none;
 }
-.stay-updated h3 {
+.stay-updated h3,
+.contact h3,
+.stay-updated nav {
   font-size: 3.5rem;
 }
 
@@ -305,7 +309,7 @@ form button {
 .stay-updated nav a {
   color: #1D81CC;
   font-family: 'Emblema One';
-  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
 /*  === FOOTER  === */
@@ -315,3 +319,27 @@ footer .container {
   padding: 10px 0;
 }
 
+footer p {
+  margin: 0;
+}
+
+/* ====================================== */
+/*  === === === MEDIA QUERIES === === ===*/
+/* ====================================== */
+
+/* === SMALL SCREEN SIZES === */
+@media all and (min-width: 350px) {
+  html {
+    font-size: 42%;
+  }
+}
+
+@media all and (min-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+
+  .padding {
+    padding: 40px 25px;
+  }
+}
