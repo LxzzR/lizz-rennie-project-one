@@ -19,7 +19,7 @@
 </head>
 <body>
   <header>
-    <div class="container clearfix">
+    <div class="container clearfix" id="home">
       <nav>
         <ul class="mobile-menu clearfix">
           <li><button>&#9776;</button>
@@ -36,10 +36,10 @@
       <div class="container">
         <nav class="desktop-nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -65,7 +65,7 @@
   </header>
 
   <main>
-    <section class="features">
+    <section class="features" id="about">
       <div class="container padding">
           <h2>New Applicances</h2>
           <div class="img-wrapper">
@@ -80,7 +80,7 @@
       </div>
     </section>
 
-    <article class="featured-article">
+    <article class="featured-article" id="blog">
       <div class="container padding">
         <div class="img-wrapper">
             <img src="./assets/espresso.jpg" alt="Stove top espresso maker">
@@ -139,7 +139,7 @@
       </div>
     </section>
 
-    <section class="stay-updated">
+    <section class="stay-updated" id="contact">
       <div class="container clearfix  padding">
         <form action="/">
           <h3>Stay Updated</h3>
