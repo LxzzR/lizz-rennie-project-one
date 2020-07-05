@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* === GLOBAL STYLES === */
 
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@ body {
   font-family: 'Barlow', Arial, Helvetica, sans-serif;
 }
 
-/* TYPOGRAPHY */
+/* === TYPOGRAPHIC STYLES === */
 
 h1,
 h2,
@@ -39,7 +39,7 @@ h1 {
 
 h2 {
   font-size: 4.2rem;
-  padding: 30px 0;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -50,7 +50,13 @@ p,
 button,
 a,
 address {
-  font-size: 3rem;
+  font-size: 2.8rem;
+}
+
+p {
+  letter-spacing: 1.02;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 a {
@@ -58,7 +64,7 @@ a {
   text-decoration: none;
 }
 
-/* GLOBAL ELEMENTS*/
+/*  === GLOBAL ELEMENTS === */
 ul,
 li {
   list-style: none;
@@ -71,7 +77,7 @@ img {
 button {
   border: none;
   display: block;
-  margin: 0 auto;
+  margin: 10px auto;
   padding: 10px 20px;
   transition: transform 200ms;
 }
@@ -81,7 +87,7 @@ button:hover {
   transform: scale(1.03);
 }
 
-/* LAYOUT STYLES */
+/* ===  LAYOUT STYLES === */
 
 .container {
   margin: 0 auto;
@@ -98,7 +104,11 @@ button:hover {
   height: 0;
 } 
 
-/* LANDING SECTION */
+.padding {
+  padding: 30px 10px;
+}
+
+/* === LANDING SECTION === */
 header {
   background: linear-gradient(55deg, #F5C8CF, #FCDDE2 40% 80%, #F5C8CF);
   max-height: 100vh;
@@ -108,7 +118,7 @@ header nav {
   float: right;
 }
 
-/* !! HIDDEN MENU STYLES THANKS TO @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON */
+/* === HIDDEN MENU STYLES FROM @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON === */
 .menu-icon {
   position: relative;
 }
@@ -127,16 +137,16 @@ header nav {
   position: absolute;
 }
 
+.menu-links li {
+  padding: 8px 0;
+}
+
 .menu-icon li:hover .menu-links,
 .menu-icon li:focus-within .menu-links {
   height: auto
 }
 
-/* !! HIDDEN MENU STYLES @JUNO COLLEGE END */
-
-.menu-links li a {
-  padding: 2px 0;
-}
+/* --- HIDDEN MENU STYLES @JUNO ENDS --- */
 
 .menu-links li a:hover {
   background: #FCDDE2;
@@ -179,21 +189,35 @@ header .container {
   right: 0px;
 }
 
-/* FEATURES SECTION */
-.features h2 {
-  text-align: center;
-}
+/*  === FEATURES SECTION + FEATURED ARTICLE ===  */
 
 .features .img-wrapper {
-  width: 45%;
+  width: 48%;
   float: left;
+  margin-bottom: 40px;
+}
+
+.features .img-wrapper:first-child {
+  float: left;
+}
+
+.features .img-wrapper:nth-child(2) {
+  float: right;
 }
 
 .features .img-wrapper:last-child {
   display: none;
 }
 
-/* ARTICLES */
+.featured-article .article-copy {
+  padding: 30px 0;
+}
+
+.featured-article button {
+  padding: 20px 30px;
+}
+
+/*  === ARTICLES  ===  */
 article .img-wrapper:first-of-type {
   width: 100%;
 }
@@ -203,53 +227,66 @@ article button {
   color: #F0F5FF;
 }
 
-/* LINKS CONACT && FOOTER */
+/*  === LINKS CONACT && FOOTER  === */
 .links,
 .stay-updated form, 
 footer {
   text-align: center;
 }
 
-/* LINKS SECTION*/
+/*  === LINKS SECTION === */
 .links .container {
   background: #F5C8CF;
   color: #042259;
   text-align: center;
   }
 
+.links li {
+  margin: 15px 0;
+}
+
 .links i {
-  font-size: 5rem;
+  font-size: 6rem;
 }
 
 .links a {
   color: #1D81CC;
   font-family: 'Emblema One';
-  font-size: 3.12rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
 }
 
-/* CONTACT SECTION */
+/*  === CONTACT SECTION === */
 .stay-updated .container {
   background: #F0F5FF;
 }
 
-.stay-updated h3 {
-  font-size: 2.5rem;
+form {
+  padding-bottom: 20px;
 }
 
-.stay-updated input {
+fieldset {
+  border: none;
+}
+.stay-updated h3 {
+  font-size: 3.5rem;
+}
+
+form input {
   border: 1px solid #F5C8CF;
+  margin-bottom: 10px;
   padding: 10px 40px;
   text-align: center;
 }
 
-.stay-updated input,
-.stay-updated input::placeholder {
+form input,
+form input::placeholder {
   color: #1F2022;
   font-family: 'Barlow', Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.stay-updated button {
+form button {
   background: #F5C8CF;
   color: #042259;
 }
@@ -268,17 +305,13 @@ footer {
 .stay-updated nav a {
   color: #1D81CC;
   font-family: 'Emblema One';
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
-/* FOOTER */
+/*  === FOOTER  === */
 footer .container {
   background: #042259;
   color: #F0F5FF;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
-/* CSS TESTING */
-fieldset {
-  border: none;
-}
