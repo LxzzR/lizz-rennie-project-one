@@ -124,7 +124,7 @@ header nav {
   float: right;
 }
 
-/* === HIDDEN MENU STYLES FROM @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON === */
+/* === HIDDEN MENU STYLING TAUGHT BY @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON === */
 .mobile-menu {
   position: relative;
 }
@@ -142,22 +142,17 @@ header nav {
   height: 0;
   overflow: hidden;
   position: absolute;
+  right: 0;
 }
 
 .menu-links li {
-  padding: 8px 0;
+  padding: 8px 20px;
 }
 
 .mobile-menu li:hover .menu-links,
 .mobile-menu li:focus-within .menu-links {
   height: auto;
   z-index: 2;
-}
-
-/* --- HIDDEN MENU STYLES @JUNO ENDS --- */
-
-.menu-links li a:hover {
-  background: #FCDDE2;
 }
 
 .desktop-nav li {
@@ -168,6 +163,8 @@ header nav {
 .desktop-nav {
   display: none;
 }
+
+/* --- HIDDEN MENU STYLES @JUNO ENDS --- */
 
 header a,
 header p {
@@ -322,17 +319,14 @@ form button {
   float: left;
 }
 
-.contact address {
-  font-size: 2rem;
+.contact address,
+.contact a {
+  font-size: 2.5rem;
   font-style: normal;
 }
 
 .stay-updated nav {
   float: right;
-}
-
-.stay-updated nav a {
-  font-size: 2.5rem;
 }
 
 /*  === FOOTER  === */
@@ -390,6 +384,24 @@ footer p {
     width: 33%;
     float: left;
     display: block;
+  }
+
+  /* Features */
+
+  .features .img-wrapper {
+    width: calc(33% - 10px);
+    margin-bottom: 100px;
+    float: left;
+  }
+  
+  .features .img-wrapper:last-child {
+    display: block;
+  }
+  
+  .featured-article .img-wrapper {
+    margin-right: 25px;
+    max-width: 30%;
+    float: left;
   }
 }
 
@@ -465,23 +477,6 @@ footer p {
     max-width: 60%;
   }
 
-  /* Features */
-
-  .features .img-wrapper {
-    width: calc(33% - 10px);
-    margin-bottom: 100px;
-    float: left;
-  }
-
-  .features .img-wrapper:last-child {
-    display: block;
-  }
-
-  .featured-article .img-wrapper {
-    margin-right: 25px;
-    max-width: 30%;
-    float: left;
-  }
 }
 
 @media all and (min-width: 1100px) {
