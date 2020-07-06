@@ -116,11 +116,11 @@ button:hover {
 }
 
 /* === LANDING SECTION === */
-header {
+.landing {
   background: linear-gradient(55deg, #F5C8CF, #FCDDE2 40% 80%, #F5C8CF);
 }
 
-header nav {
+.landing nav {
   float: right;
 }
 
@@ -166,8 +166,8 @@ header nav {
 
 /* --- HIDDEN MENU STYLES @JUNO ENDS --- */
 
-header a,
-header p {
+.landing a,
+.landing p {
   color: #042259;
 }
 
@@ -178,16 +178,16 @@ header p {
   width: 60%;
 }
 
-header .img-wrapper {
+.landing .img-wrapper {
   float: right;
   max-width: 75%;
 }
 
-header h2 {
+.landing h2 {
   clear: both;
 }
 
-header .container {
+.landing .container {
   position: relative;
 }
 
