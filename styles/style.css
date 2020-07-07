@@ -117,7 +117,7 @@ button:hover {
 
 /* === LANDING SECTION === */
 .landing {
-  background: linear-gradient(145deg, #F5C8CF, #F0F5FF 80%, #F5C8CF);
+  background: radial-gradient(#F0F5FF, #F5C8CF);
 }
 
 .landing nav {
