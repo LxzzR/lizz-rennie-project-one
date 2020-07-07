@@ -117,14 +117,15 @@ button:hover {
 
 /* === LANDING SECTION === */
 .landing {
-  background: linear-gradient(145deg, #F5C8CF, #F0F5FF 70% 80%, #F5C8CF);
+  background: linear-gradient(145deg, #F5C8CF, #F0F5FF 80%, #F5C8CF);
 }
 
 .landing nav {
   float: right;
 }
 
-/* === HIDDEN MENU STYLING TAUGHT BY @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON === */
+/* === HIDDEN CSS MENU STYLING TAUGHT BY @JUNO COLLEGE, WEB DEV BOOTCAMP LESSON === */
+/* mobile menu styles */
 .mobile-menu {
   position: relative;
 }
@@ -155,16 +156,35 @@ button:hover {
   z-index: 2;
 }
 
-.desktop-nav li {
-  padding-right: 30px;
-  text-transform: uppercase;
-}
-
+/* desktop menu styles */
 .desktop-nav {
   display: none;
 }
 
-/* --- HIDDEN MENU STYLES @JUNO ENDS --- */
+.desktop-nav {
+  padding: 25px 0;
+}
+
+.desktop-nav a {
+  padding: 5px 20px;
+  margin: 0;
+  transition: color 200ms;
+}
+
+.desktop-nav a:hover {
+  color: #F0F5FF;
+}
+
+.desktop-nav li {
+  text-transform: uppercase;
+  transition: background 200ms;
+}
+
+.desktop-nav li:hover {
+  background: #1D81CC;
+}
+
+/* --- HIDDEN CSS MENU STYLES @JUNO ENDS --- */
 
 .landing a,
 .landing p {
@@ -452,18 +472,6 @@ footer p {
 
   .desktop-nav {
     display: block;
-    padding: 15px 0;
-  }
-
-  .desktop-nav a {
-    padding: 5px 20px;
-    margin: 0;
-    transition: background 250ms, color 200ms;
-  }
-
-  .desktop-nav a:hover {
-    background: #1D81CC;
-    color: #F0F5FF;
   }
 
   /* Header styles */
