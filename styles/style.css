@@ -76,7 +76,7 @@ img {
 button {
   border: none;
   display: block;
-  margin: 10px auto;
+  margin: auto;
   padding: 10px 20px;
   transition: transform 200ms;
 }
@@ -117,7 +117,7 @@ button:hover {
 
 /* === LANDING SECTION === */
 .landing {
-  background: linear-gradient(55deg, #F5C8CF, #FCDDE2 40% 80%, #F5C8CF);
+  background: linear-gradient(145deg, #F5C8CF, #F0F5FF 70% 80%, #F5C8CF);
 }
 
 .landing nav {
